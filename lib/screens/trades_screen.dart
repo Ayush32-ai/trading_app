@@ -720,6 +720,7 @@ class _TradesScreenState extends State<TradesScreen>
             ],
 
             // Historical data indicators (if available)
+            // Historical data indicators (if available)
             if (trade.hasHistoricalData) ...[
               const SizedBox(height: 12),
               Row(
@@ -731,7 +732,7 @@ class _TradesScreenState extends State<TradesScreen>
                   ),
                   const SizedBox(width: 4),
                   Text(
-                    'Latest: \$${trade.latestPrice.toStringAsFixed(2)} | Vol: ${trade.latestVolume}',
+                    'Latest: \$${trade.latestPrice?.toStringAsFixed(2) ?? 'N/A'} | Vol: ${trade.latestVolume ?? 'N/A'}',
                     style: Theme.of(context).textTheme.bodySmall?.copyWith(
                       color: AppTheme.textSecondary,
                     ),

@@ -49,6 +49,7 @@ dependencies:
   
   # Shared preferences for local storage
   shared_preferences: ^2.2.3
+  intl: ^0.20.2
   
   # Icons
   font_awesome_flutter: ^10.7.0
